@@ -7,7 +7,7 @@ import { Usuario } from './login.types';
   providedIn: 'root',
 })
 export class LoginService {
-  private apiUrl = 'https://guia-mango.onrender.com/'; // Cambia esto por la URL de tu API
+  private apiUrl = 'https://guia-mango.onrender.com'; // Cambia esto por la URL de tu API
 
   constructor(private http: HttpClient) {}
 

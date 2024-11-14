@@ -7,7 +7,7 @@ import { LoginService } from '../login/login.service';
   providedIn: 'root',
 })
 export class PlagasComponentService {
-  private apiUrl = 'https://guia-mango.onrender.com/';
+  private apiUrl = 'https://guia-mango.onrender.com';
 
   constructor(private http: HttpClient, private loginService: LoginService) {}
 
