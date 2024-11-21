@@ -8,11 +8,14 @@
   font-family: "Work Sans", sans-serif;
   text-transform: capitalize;
   font-size: 26px;
+  font-weight: 700;
   color: #555555 !important;
 }
-.text-secundary{
-  margin-left: 45px;
-  font-size: 30px;
+.text-secundary {
+  margin-left: 35px;
+  font-size: 33px;
+  font-weight: 700;
+
   color: #39a900 !important;
 }
 .card {
@@ -27,9 +30,9 @@
   flex-direction: column;
   justify-content: space-between; /* Esto distribuye el espacio entre los elementos */
 }
-.card-body img{
+.card-body img {
   width: 500px;
-} 
+}
 .card-img-top {
   height: 150px;
   object-fit: cover;

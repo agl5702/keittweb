@@ -21,30 +21,28 @@ export class PlagasComponent {
   ) {}
 
   onFileSelected(event: Event): void {
-  const input = event.target as HTMLInputElement;
-  event.preventDefault();
-  
-  if (input.files && input.files.length > 0) {
-    const file = input.files[0];
-    
-    if (file.type.startsWith('image/')) {
-      this.archivoSeleccionado = file;
-      this.archivoValido = true;
-      
-      const reader = new FileReader();
-      reader.onload = () => {
-        this.imagenDataUrl = reader.result;
-        
-      };
-      reader.readAsDataURL(file);
-      
-    } else {
-      this.archivoSeleccionado = null;
-      this.archivoValido = false;
-      alert('Por favor, selecciona un archivo de imagen válido.');
+    const input = event.target as HTMLInputElement;
+    event.preventDefault();
+
+    if (input.files && input.files.length > 0) {
+      const file = input.files[0];
+
+      if (file.type.startsWith('image/')) {
+        this.archivoSeleccionado = file;
+        this.archivoValido = true;
+
+        const reader = new FileReader();
+        reader.onload = () => {
+          this.imagenDataUrl = reader.result;
+        };
+        reader.readAsDataURL(file);
+      } else {
+        this.archivoSeleccionado = null;
+        this.archivoValido = false;
+        alert('Por favor, selecciona un archivo de imagen válido.');
+      }
     }
   }
-}
 
   analizarImagen(): void {
     if (this.archivoSeleccionado) {
@@ -55,22 +53,27 @@ export class PlagasComponent {
       this.plagasService.agregarImagen(formData).subscribe(
         (response) => {
           console.log('Respuesta de la API:', response);
-          const prediccion = response.prediccion; 
+          const prediccion = response.prediccion;
           const recomendacionesFormateadas = response.recomendaciones;
 
-          
           const prediccionFormateada = prediccion
 
-            .toUpperCase() 
-            .replace(/_/g, ' '); 
+            .toUpperCase()
+            .replace(/_/g, ' ');
 
-          
           Swal.fire({
             title: 'Predicción de la Imagen',
-            html: `<p><strong>La predicción es:</strong> ${prediccionFormateada}</p>
-                   <p><strong>Recomendaciones:</strong> ${recomendacionesFormateadas}</p>`,
+            html: `
+            <p style="text-align: justify;">
+              <strong>La predicción es:</strong> ${prediccionFormateada}
+            </p>
+            <p style="text-align: justify;">
+              <strong>Recomendaciones:</strong> ${recomendacionesFormateadas}
+            </p>
+          `,
             imageUrl: this.imagenDataUrl as string,
             imageAlt: 'Imagen seleccionada',
+            imageHeight: 200,
             confirmButtonText: 'OK',
           });
         },
