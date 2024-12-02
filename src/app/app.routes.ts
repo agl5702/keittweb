@@ -11,32 +11,54 @@ import { SiembraComponent } from './siembra/siembra.component';
 import { RiegoComponent } from './riego/riego.component';
 import { CultivoComponent } from './cultivo/cultivo.component';
 import { PlagasComponent } from './plagas/plagas.component';
-
+import { RegistroComponent } from './registro/registro.component';
 
 export const routes: Routes = [
-    {
-        path: '',
-        title: 'Sena Mango',
-        component: LandingComponent
-    },
-    {
-        path: 'login',
-        title: 'Login',
-        component: LoginComponent
-    },
-    {
-        path: 'admin',
-        component: AdminComponent,
-        canActivate: [AuthGuard],
-        children: [
-            { path: 'home', title: 'Home', component: HomeComponent },
-            { path: 'information', title: 'Information', component: InformationComponent },
-            { path: 'introduccion', title: 'Introduccion', component: IntroduccionComponent },
-            { path: 'analisis-suelo', title: 'Analisis-suelo', component: AnalisisSueloComponent },
-            { path: 'siembra', title: 'Siembra', component: SiembraComponent },
-            { path: 'cultivo', title: 'Cultivo', component: CultivoComponent },
-            { path: 'riego', title: 'Riego', component: RiegoComponent },
-            { path: 'plagas', title: 'Plagas', component: PlagasComponent },
-        ]
-    }
+  {
+    path: '',
+    title: 'Sena Mango',
+    component: LandingComponent,
+  },
+  {
+    path: 'login',
+    title: 'Login',
+    component: LoginComponent,
+  },
+  {
+    path: 'registro',
+    title: 'Registro',
+    component: RegistroComponent,
+  },
+  {
+    path: 'analisis',
+    title: 'Registro',
+    component: AnalisisSueloComponent,
+  },
+  {
+    path: 'admin',
+    component: AdminComponent,
+    canActivate: [AuthGuard],
+    children: [
+      { path: 'home', title: 'Home', component: HomeComponent },
+      {
+        path: 'information',
+        title: 'Information',
+        component: InformationComponent,
+      },
+      {
+        path: 'introduccion',
+        title: 'Introduccion',
+        component: IntroduccionComponent,
+      },
+      {
+        path: 'analisis-suelo',
+        title: 'Analisis-suelo',
+        component: AnalisisSueloComponent,
+      },
+      { path: 'siembra', title: 'Siembra', component: SiembraComponent },
+      { path: 'cultivo', title: 'Cultivo', component: CultivoComponent },
+      { path: 'riego', title: 'Riego', component: RiegoComponent },
+      { path: 'plagas', title: 'Plagas', component: PlagasComponent },
+    ],
+  },
 ];
