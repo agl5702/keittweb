@@ -16,7 +16,7 @@ import { RegistroComponent } from './registro/registro.component';
 export const routes: Routes = [
   {
     path: '',
-    title: 'Sena Mango',
+    title: 'Keitt Web',
     component: LandingComponent,
   },
   {
