@@ -7,7 +7,7 @@ import { LoginService } from '../login/login.service';
   providedIn: 'root',
 })
 export class AnalisisSueloService {
-  private apiUrl = 'https://guia-mango.onrender.com';
+  private apiUrl = 'https://kiettweb.onrender.com';
 
   constructor(private http: HttpClient, private loginService: LoginService) {}
 
