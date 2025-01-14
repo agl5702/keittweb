@@ -10,6 +10,7 @@
     font-weight: bold;
     font-size: 30px;    
 }
+<<<<<<< HEAD
 div ul li a{
   font-size: 20px;
   color: #012970;
@@ -19,6 +20,8 @@ div ul li a:hover{
   
   color: #4154f1;
 }
+=======
+>>>>>>> f58ecd5a4a9ae472ce02d6b9f175a613dc6a0340
 
 .brand{
     font-size: 30px;
@@ -73,6 +76,7 @@ div ul li a:hover{
   .social-icon:hover {
     background-color: #e0e0e0; /* Cambio de color del círculo al pasar el mouse */
   }
+<<<<<<< HEAD
       
   .slider {
 	width: 100%;
@@ -228,3 +232,6 @@ div ul li a:hover{
 #t-7:checked ~ .testimonials label[for="t-7"] {
   z-index: 4;
 }
+=======
+      
+>>>>>>> f58ecd5a4a9ae472ce02d6b9f175a613dc6a0340

@@ -36,7 +36,13 @@ export class AdminService {
         return of(null); // Manejar el error según sea necesario
       })
     );
+<<<<<<< HEAD
   } 
+=======
+  }
+
+  
+>>>>>>> f58ecd5a4a9ae472ce02d6b9f175a613dc6a0340
 
   performLogout(): void {
     this.logout().subscribe();
