@@ -85,7 +85,6 @@
               }
             ],
             "styles": [
-<<<<<<< HEAD
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
@@ -95,21 +94,12 @@
             "scripts": [
               "node_modules/pdfjs-dist/build/pdf.min.js"
             ]
-=======
-              "src/styles.css"
-            ],
-            "scripts": []
->>>>>>> f58ecd5a4a9ae472ce02d6b9f175a613dc6a0340
           }
         }
       }
     }
   },
   "cli": {
-<<<<<<< HEAD
-    "analytics": "4f8e52b5-2d5a-4c91-af0b-a887c441373f"
-=======
-    "analytics": "368b79d7-f697-49fa-8c01-8f056325bd25"
->>>>>>> f58ecd5a4a9ae472ce02d6b9f175a613dc6a0340
+    "analytics": "3a92d70a-02d6-47ee-8f1e-7ae3fe1fecc1"
   }
 }
