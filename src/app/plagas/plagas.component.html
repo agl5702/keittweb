@@ -1,0 +1,481 @@
+<section class="content">
+  <div class="container">
+    <h1 class="text-primary">Detección de plagas mediante I.A</h1>
+    <h2 class="title text-secundary">Plagas por Patógenos</h2>
+    <div>
+      <div class="row">
+        <div class="col">
+          <div class="container my-5">
+            <div class="row g-4">
+              <!-- Card 1 -->
+              <div class="col-md-6">
+                <div class="card">
+                  <img
+                    src="dist/img/hoja.png"
+                    alt="Imagen Card 1"
+                    class="card-img-top"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Odium</h5>
+                    <p class="card-text"></p>
+                    <button
+                      type="button"
+                      class="btn btn-ver-mas"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal1"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-md-6">
+                <div class="card">
+                  <img
+                    src="dist/img/an1.jpg"
+                    alt="Imagen Card 2"
+                    class="card-img-top"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Antracnosis</h5>
+                    <p class="card-text"></p>
+                    <button
+                      type="button"
+                      class="btn btn-ver-mas"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal2"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col text-principal">
+          El cultivo de mango enfrenta plagas importantes como el Oidium y el
+          Colletotrichum, que dañan inflorescencias y frutos bajo condiciones de
+          humedad. La mosca de la fruta, trips, queresas y arañita roja también
+          afectan la calidad del mango, causando pudrición o deformaciones en
+          los frutos, especialmente en condiciones de calor o mal manejo.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container arriba">
+  <h2 class="title text-secundary">
+    Plagas por Artrópodos y factores ambientales
+  </h2>
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-3">
+      <div class="card">
+        <img
+          src="dist/img/malformacion.jpg"
+          alt="Imagen Card 1"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Malformación</h5>
+          <p class="card-text"></p>
+          <button
+            type="button"
+            class="btn btn-ver-mas"
+            data-bs-toggle="modal"
+            data-bs-target="#modal3"
+          >
+            Ver más
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-3">
+      <div class="card">
+        <img src="dist/img/tips.png" alt="Imagen Card 2" class="card-img-top" />
+        <div class="card-body text-center">
+          <h5 class="card-title">Trips</h5>
+          <p class="card-text"></p>
+          <button
+            type="button"
+            class="btn btn-ver-mas"
+            data-bs-toggle="modal"
+            data-bs-target="#modal4"
+          >
+            Ver más
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+
+    <!-- Card 4 -->
+    <div class="col-md-3">
+      <div class="card">
+        <img
+          src="dist/img/colecteros.png"
+          alt="Imagen Card 4"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Eriofidos</h5>
+          <p class="card-text"></p>
+          <button
+            type="button"
+            class="btn btn-ver-mas"
+            data-bs-toggle="modal"
+            data-bs-target="#modal6"
+          >
+            Ver más
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container arriba">
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-3">
+      <div class="card">
+        <img
+          src="dist/img/cochi.PNG"
+          alt="Imagen Card 1"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Cochinilla</h5>
+          <p class="card-text"></p>
+          <button
+            type="button"
+            class="btn btn-ver-mas"
+            data-bs-toggle="modal"
+            data-bs-target="#modal7"
+          >
+            Ver más
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-3">
+      <div class="card">
+        <img
+          src="dist/img/hormiga.png"
+          alt="Imagen Card 2"
+          class="card-img-top"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Hormiga</h5>
+          <p class="card-text"></p>
+          <button
+            type="button"
+            class="btn btn-ver-mas"
+            data-bs-toggle="modal"
+            data-bs-target="#modal8"
+          >
+            Ver más
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h1 class="text-primary">Detección de plagas con I.A</h1>
+  <div class="container">
+    <form>
+      <div class="input-group">
+        <span class="input-group-text">
+          <i class="fas fa-camera"></i>
+        </span>
+        <input
+          type="file"
+          class="form-control"
+          id="fileInput"
+          (change)="onFileSelected($event)"
+          accept="image/*"
+          aria-label="Subir archivo"
+        />
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="analizarImagen()"
+          [disabled]="!archivoValido"
+        >
+          Analizar
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div
+  class="modal fade"
+  id="modal1"
+  tabindex="-1"
+  aria-labelledby="modal1Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Label">Plaga Oido</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        Es la plaga más importante que afecta al mango en las zonas productoras
+        de este cultivo en la Región. El ataque en la inflorescencia causa seria
+        reducción de la fructificación. El patógeno es un hongo (Oidium
+        mangiferae Berthet),
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div
+  class="modal fade"
+  id="modal2"
+  tabindex="-1"
+  aria-labelledby="modal2Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal2Label">Plaga Antracnosis</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        La antracnosis en mango Keitt es una enfermedad fúngica causada por el
+        hongo Colletotrichum gloeosporioides. Afecta principalmente a los
+        frutos, pero también puede atacar las hojas y ramas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="modal3"
+  tabindex="-1"
+  aria-labelledby="modal1Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Label">Plaga Malformación</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        es un trastorno que afecta el desarrollo del fruto, resultando en una
+        forma anormal o deformada. Esta condición puede ser causada por factores
+        como el estrés ambiental, deficiencias nutricionales, o infecciones
+        bacterianas y fúngicas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div
+  class="modal fade"
+  id="modal4"
+  tabindex="-1"
+  aria-labelledby="modal2Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal2Label">Plaga Trips</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        Hay dos especies de insectos denominados trips: Selenothrips
+        rubrocinctus y Frankiniella sp. Son insectos pequeños de aproximadamente
+        1 mm, que atacan hojas y con mayor frecuencia flores, estos insectos son
+        polinizantes naturales
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="modal5"
+  tabindex="-1"
+  aria-labelledby="modal3Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal3Label"></h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="modal6"
+  tabindex="-1"
+  aria-labelledby="modal4Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal4Label">Plaga Eriofidos</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        Estos ácaros se alimentan de las células vegetales, lo que puede causar
+        deformaciones en las hojas, brotes y frutos. En el caso del mango, los
+        eriófidos pueden provocar la aparición de manchas o deformaciones en los
+        frutos y hojas
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="modal7"
+  tabindex="-1"
+  aria-labelledby="modal3Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal3Label">Plaga Cochinilla</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        Estas plagas se alimentan de la savia de la planta, lo que debilita el
+        árbol y puede afectar la calidad de los frutos. En el mango, las
+        cochinillas se presentan como pequeñas masas blancas o cerosas, que se
+        agrupan en ramas, hojas y frutos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="modal8"
+  tabindex="-1"
+  aria-labelledby="modal4Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal4Label">Plaga Hormiga</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        Las hormigas pueden ser una plaga secundaria en el cultivo de mango
+        Keitt, ya que, aunque no suelen atacar directamente al árbol, pueden
+        favorecer la proliferación de otras plagas, como las cochinillas. Las
+        hormigas protegen a las cochinillas de sus depredadores naturales a
+        cambio de la melaza que estas excretan.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------------- -->

@@ -1,0 +1,28 @@
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Reemplaza con el peso deseado, como 400, 700, etc. */
+  font-style: normal;
+}
+
+.text-primary {
+  font-family: "Work Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 23px;
+  color: #555555 !important;
+}
+
+.text-secundary {
+  font-weight: 700;
+  color: #39a900 !important;
+}
+
+p {
+  text-align: justify;
+}
+
+.img-recomendacion img {
+  margin-left: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
