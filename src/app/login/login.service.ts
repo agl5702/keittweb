@@ -7,7 +7,7 @@ import { Usuario } from './login.types';
   providedIn: 'root',
 })
 export class LoginService {
-  private apiUrl = 'http://127.0.0.1:8000'; // Cambia esto por la URL de tu API
+  private apiUrl = 'kiettweb.onrender.com'; // Cambia esto por la URL de tu API
 
   constructor(private http: HttpClient) {}
 
